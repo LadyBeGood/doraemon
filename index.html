@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doraemon</title>
+</head>
+
+<body>
+    <img src="./d4.svg">
+    <div class="doraemon"></div>
+
+    <!-- <div id="homer" aria-label="Homer Simpson" role="img"></div> -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100svh;
+            display: grid;
+            place-items: center;
+        }
+
+        img,
+        .doraemon {
+            width: min(500px, 100vw);
+        }
+
+        .doraemon {
+            --red: #cb1f2b;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            aspect-ratio: 1/1;
+            opacity: 0.5;
+            background-repeat: no-repeat;
+            background-image: 
+                /* left eye ball */
+                radial-gradient(ellipse 83% 100%, transparent 45%, red 0 49.5%, transparent 0),
+                
+                /* right eye ball */
+                radial-gradient(ellipse 83% 100%, transparent 45%, red 0 49.5%, transparent 0),
+
+                /* left pupil */
+                radial-gradient(ellipse 65% 100%, transparent 18%, red 0 49.5%, transparent 0),
+
+                /* right pupil */
+                radial-gradient(ellipse 65% 100%, transparent 18%, red 0 49.5%, transparent 0),
+
+                /* nose */
+                radial-gradient(red 0 49.5%, transparent 0),
+
+                /* nose to mouth line */
+                linear-gradient(to right, transparent 0%, red 0 3%, transparent 0),
+
+                /* mouth */
+                radial-gradient(ellipse 300% 300% at 50% 0%, transparent 20%, red 0 20.4%, transparent 0)/*,
+
+                 whishker 1 
+                linear-gradient( green 20%, red 0 30%, blue 0)*/
+            ;
+            background-size:
+                /* left eye ball */
+                16% 16%,
+
+                /* right eye ball */
+                16% 16%,
+
+                /* left pupil */
+                5.25% 5.25%,
+
+                /* right pupil */
+                5.25% 5.25%,
+
+                /* nose */
+                12.25% 12.25%,
+                
+                /* nose to mouth line */
+                21% 21%,
+
+                /* mouth */
+                44% 44%,
+
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%
+            ;
+            background-position:
+                /* left eye ball */
+                46% 2.8%,
+
+                /* right eye ball */
+                61% 2.8%,
+
+                /* left pupil */
+                49.3% 9.25%,
+
+                /* right pupil */
+                56.9% 9.14%,
+
+                /* nose */
+                53.25% 15.5%,
+
+                /* nose to mouth line */
+                66.5% 28%,
+
+                /* mouth */
+                55% 29%,
+
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%
+            ;
+        }
+
+        #homer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vmin;
+            height: 80vmin;
+            background-repeat: no-repeat;
+            background-image:
+                /* hair */
+                radial-gradient(ellipse 102% 95% at 58.75% 80%, transparent 45%, black 0 49.5%, transparent 0),
+                radial-gradient(ellipse 102% 95% at 66.75% 70%, transparent 45%, black 0 49.5%, transparent 0),
+                linear-gradient(82deg, transparent 40%, black 0 50%, transparent 0),
+                linear-gradient(42deg, transparent 30%, black 0 37%, transparent 0),
+                linear-gradient(90deg, transparent 40%, black 0 50%, transparent 0),
+                linear-gradient(52deg, transparent 62%, black 0 68%, transparent 0),
+                /* pupils */
+                radial-gradient(circle at 43.5% 45.5%, black 2%, transparent 0),
+                radial-gradient(circle at 64% 41.5%, black 1.75%, transparent 0),
+                /* eye 1 */
+                radial-gradient(ellipse 54% 51% at 44.5% 45%, white 17%, black 0 18.5%, transparent 0),
+                /* nose */
+                radial-gradient(ellipse 54% 51% at 0% 74.8%, white 51%, black 0 61%, transparent 0),
+                radial-gradient(circle at 150% 500%, white 88.75%, black 0 90.25%, transparent 0),
+                radial-gradient(circle at -85% -510%, #f000 89.88%, black 0 90.75%, transparent 0),
+                /* smile */
+                radial-gradient(circle at 110% 60%, transparent 50%, black 0 65%, transparent 0),
+                /* eye 2 */
+                radial-gradient(ellipse 50% 47% at 60.5% 42%, white 17%, black 0 18.5%, transparent 0),
+                /* neck */
+                radial-gradient(circle at -350% 120%, transparent 79.5%, #000 0 80.25%, transparent 0 92%, transparent 0),
+                radial-gradient(circle at 350% -90%, transparent 85%, #000 0 88%, transparent 0 92%, transparent 0),
+                /* mouth */
+                radial-gradient(circle at 40% -500%, transparent 90.5%, #000 0 92%, transparent 0 92%, transparent 0),
+                radial-gradient(circle at -30% 112%, transparent 59%, #000 0 62.5%, transparent 0),
+                radial-gradient(circle at -40% 20%, transparent 52%, #000 0 63%, transparent 0),
+                radial-gradient(circle at 0% 52%, white 35%, #000 0 45%, transparent 0),
+                /* chin */
+                linear-gradient(white, white),
+                radial-gradient(ellipse 62% 57% at 53% 71%, transparent 24%, black 0 25.5%, transparent 0),
+                /* ear */
+                radial-gradient(ellipse 50% 55% at 75% 50%, transparent 75%, black 0 90%, transparent 0),
+                radial-gradient(circle at 50% 110%, transparent 50%, black 0 65%, transparent 0),
+                radial-gradient(circle at 110% 40%, transparent 50%, black 0 65%, transparent 0),
+                /* eyebrow */
+                radial-gradient(circle at -20% 84%, transparent 55%, black 0 65%, transparent 0),
+                /* cheek */
+                radial-gradient(circle at -10% 50%, transparent 55%, black 0 65%, transparent 0);
+            background-size:
+                /* hair */
+                18% 23%,
+                17% 20%,
+                8% 8%,
+                8% 8%,
+                8% 9%,
+                8% 8%,
+                /* pupils */
+                100% 100%,
+                100% 100%,
+                /* eye 1 */
+                100% 100%,
+                /* nose */
+                15% 15%,
+                10% 10%,
+                14.5% 15%,
+                /* smile */
+                3.5% 3.5%,
+                /* eye 2 */
+                100% 100%,
+                /* neck */
+                25% 18%,
+                10% 10%,
+                /* mouth */
+                34% 10%,
+                15% 12.5%,
+                5% 5%,
+                5% 12%,
+                /* chin */
+                40% 23%,
+                100% 100%,
+                /* ear */
+                10% 10%,
+                3.5% 3.5%,
+                3.5% 2.5%,
+                /* eyebrow */
+                5.5% 7%,
+                /* cheek */
+                5.5% 7%;
+            background-position:
+                /* hair */
+                31% -1%,
+                23.5% 7%,
+                24% 56%,
+                26.9% 52.6%,
+                29.25% 52.25%,
+                30% 51.75%,
+                /* pupils */
+                0 0,
+                0 0,
+                /* eye 1 */
+                0 0,
+                /* nose */
+                72.75% 46%,
+                58% 47.25%,
+                58.88% 57%,
+                /* smile */
+                41.5% 72.5%,
+                /* eye 2 */
+                0 0,
+                /* neck */
+                43% 83%,
+                70% 89%,
+                /* mouth */
+                63% 73%,
+                76% 59%,
+                70% 75.5%,
+                78% 69%,
+                /* chin */
+                84% 69.5%,
+                0 0,
+                /* ear */
+                28% 65%,
+                31.5% 63.5%,
+                31.75% 64.5%,
+                /* eyebrow */
+                66% 30.75%,
+                /* cheek */
+                69.5% 51%;
+
+            &::before {
+                content: "";
+                box-sizing: border-box;
+                border: 0.8vmin solid;
+                position: absolute;
+                top: 12%;
+                left: 21%;
+                width: 43%;
+                height: 42%;
+                border-radius: 100% / 90% 85% 95% 0%;
+                transform: rotate(-25deg);
+                background: transparent;
+                clip-path: polygon(0% 0%, 100% 0%, 100% 63%, 0% 96%);
+                box-shadow: inset -2vmin 1vmin 0 -1vmin white;
+                box-shadow: inset -2vmin 1vmin 0 -1vmin white;
+            }
+        }
+
+    </style>
+</body>
+
+</html>
