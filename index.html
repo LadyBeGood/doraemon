@@ -11,17 +11,11 @@
     <!-- <img src="./d4.svg"> -->
     <div class="doraemon"></div>
 
-    <!-- <div id="homer" aria-label="Homer Simpson" role="img"></div> -->
-
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        
         body {
             height: 100svh;
+            margin: 0;
             display: grid;
             place-items: center;
         }
@@ -32,137 +26,161 @@
         }
 
         .doraemon {
-            --red: #cb1f2b;
+            /*====================================*/
+            /* COLOURS                            */
+            /*====================================*/
+            --blue: #009ccf;
+            --red: #cb222d;
+            --yellow: #fcd441;
+            --white: #f6f7f1;
+            --black: #090a05;
+            /* --black: red; */
 
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             aspect-ratio: 1/1;
-            opacity: 0.5;
+            /* opacity: 0.5; */
             background-repeat: no-repeat;
             background-image: 
+                /*====================================*/
+                /* STROKES                            */
+                /*====================================*/
                 /* head */
-                radial-gradient(ellipse 350% 100% at 50% 60%, transparent 45.75%, red 0 51.75%, transparent 0),
-                radial-gradient(ellipse 465% 300% at 140% 150%, transparent 45.25%, red 0 47.5%, transparent 0),
-                radial-gradient(ellipse 465% 300% at -35% 150%, transparent 45.25%, red 0 47.25%, transparent 0),
-                radial-gradient(ellipse 2400% 1000% at -860% 300%, transparent 45.75%, red 0 46.5%, transparent 0),
+                radial-gradient(ellipse 350% 100% at 50% 60%, transparent 45.75%, var(--black) 0 51.75%, transparent 0),
+                radial-gradient(ellipse 465% 300% at 140% 150%, transparent 45.25%, var(--black) 0 47.5%, transparent 0),
+                radial-gradient(ellipse 465% 300% at -35% 150%, transparent 45.25%, var(--black) 0 47.25%, transparent 0),
+                radial-gradient(ellipse 2400% 1000% at -860% 300%, transparent 45.75%, var(--black) 0 46.5%, transparent 0),
 
 
 
                 /* left eye ball */
-                radial-gradient(ellipse 83% 100%, transparent 45%, red 0 49.5%, transparent 0),
+                radial-gradient(ellipse 83% 100%, transparent 45%, var(--black) 0 49.5%, transparent 0),
                 
                 /* right eye ball */
-                radial-gradient(ellipse 83% 100%, transparent 45%, red 0 49.5%, transparent 0),
+                radial-gradient(ellipse 83% 100%, transparent 45%, var(--black) 0 49.5%, transparent 0),
 
                 /* left pupil */
-                radial-gradient(ellipse 65% 100%, transparent 18%, red 0 49.5%, transparent 0),
+                radial-gradient(ellipse 65% 100%, transparent 18%, var(--black) 0 49.5%, transparent 0),
 
                 /* right pupil */
-                radial-gradient(ellipse 65% 100%, transparent 18%, red 0 49.5%, transparent 0),
+                radial-gradient(ellipse 65% 100%, transparent 18%, var(--black) 0 49.5%, transparent 0),
 
                 /* nose */
-                radial-gradient(transparent 42%, red 0 49.5%, transparent 0),
+                radial-gradient(var(--red) 42%, var(--black) 0 49.5%, transparent 0),
 
                 /* nose to mouth line */
-                linear-gradient(to right, transparent 0%, red 0 3%, transparent 0),
+                linear-gradient(to right, transparent 0%, var(--black) 0 3%, transparent 0),
 
                 /* mouth */
-                radial-gradient(ellipse 308% 300% at 50% 0.25%, transparent 20%, red 0 20.4%, transparent 0),
+                radial-gradient(ellipse 308% 300% at 50% 0.25%, transparent 20%, var(--black) 0 20.4%, transparent 0),
 
                 /* whishker 1 */
-                linear-gradient(201deg, transparent 20%, red 0 22%, transparent 0),
+                linear-gradient(201deg, transparent 20%, var(--black) 0 22%, transparent 0),
 
                 /* whishker 2 */
-                linear-gradient(184deg, transparent 20%, red 0 22.75%, transparent 0),
+                linear-gradient(184deg, transparent 20%, var(--black) 0 22.75%, transparent 0),
 
                 /* whishker 3 */
-                linear-gradient(166deg, transparent 20%, red 0 22.5%, transparent 0),
+                linear-gradient(166deg, transparent 20%, var(--black) 0 22.5%, transparent 0),
 
                 /* whishker 4 */
-                linear-gradient(158.5deg, transparent 20%, red 0 22.5%, transparent 0),
+                linear-gradient(158.5deg, transparent 20%, var(--black) 0 22.5%, transparent 0),
 
                 /* whishker 5 */
-                linear-gradient(177deg, transparent 20%, red 0 22.5%, transparent 0),
+                linear-gradient(177deg, transparent 20%, var(--black) 0 22.5%, transparent 0),
 
                 /* whishker 6 */
-                linear-gradient(194deg, transparent 20%, red 0 22.5%, transparent 0),
+                linear-gradient(194deg, transparent 20%, var(--black) 0 22.5%, transparent 0),
 
                 /* left hand */
-                radial-gradient(transparent 44%, red 0 49.5%, transparent 0),
+                radial-gradient(var(--white) 44%, var(--black) 0 49.5%, transparent 0),
 
                 /* left arm strokes */
-                radial-gradient(ellipse 816% 640% at 360% -100%, transparent 44.5%, red 0 44.95%, transparent 0),
-                radial-gradient(ellipse 530% 675% at -85% 300%, transparent 44.1%, red 0 45%, transparent 0),
+                radial-gradient(ellipse 816% 640% at 360% -100%, transparent 44.5%, var(--black) 0 44.95%, transparent 0),
+                radial-gradient(ellipse 530% 675% at -85% 300%, transparent 44.1%, var(--black) 0 45%, transparent 0),
 
                 /* right hand */
-                radial-gradient(transparent 44%, red 0 49.5%, transparent 0),
+                radial-gradient(var(--white) 44%, var(--black) 0 49.5%, transparent 0),
                 
                 /* right arm strokes */
-                radial-gradient(400% 400% at -100% 170%, transparent 43.25%, red 0 44%, transparent 0),
-                radial-gradient(600% 600% at 180% -190%, transparent 43.25%, red 0 46%, transparent 0),
+                radial-gradient(400% 400% at -100% 170%, transparent 43.25%, var(--black) 0 44%, transparent 0),
+                radial-gradient(600% 600% at 180% -190%, transparent 43.25%, var(--black) 0 46%, transparent 0),
+                
+                /* belly */
+                radial-gradient(ellipse 100% 93.5% at 50% 32%, transparent 40%, var(--black) 0 41.5%, transparent 0),
                 
                 /* left torso */
-                radial-gradient(900% 900% at 418% 39%, transparent 40.25%, red 0 40.5%, transparent 0),
-                radial-gradient(500% 1200% at 251% -200%, transparent 43.5%, red 0 45.25%, transparent 0),
+                radial-gradient(900% 900% at 418% 39%, transparent 40.25%, var(--black) 0 40.5%, transparent 0),
+                radial-gradient(500% 1200% at 251% -200%, transparent 43.5%, var(--black) 0 45.25%, transparent 0),
+                
+                radial-gradient(900% 900% at 418% 39%, transparent 38.75%, var(--blue) 0 40.5%, transparent 0),
+                radial-gradient(500% 1200% at 251% -200%, transparent 30%, var(--blue) 0 45.25%, transparent 0),
 
                 /* right torso */
-                radial-gradient(900% 900% at -324% 39%, transparent 40.25%, red 0 40.5%, transparent 0),
-                radial-gradient(500% 1200% at -144% -200%, transparent 43.6%, red 0 45.25%, transparent 0),
+                radial-gradient(900% 900% at -324% 39%, transparent 40.25%, var(--black) 0 40.5%, transparent 0),
+                radial-gradient(500% 1200% at -144% -200%, transparent 43.6%, var(--black) 0 45.25%, transparent 0),
+                
+                radial-gradient(900% 900% at -324% 39%, transparent 38.75%, var(--blue) 0 40.5%, transparent 0),
+                radial-gradient(500% 1200% at -144% -200%, transparent 30%, var(--blue) 0 45.25%, transparent 0),
                 
                 /* left foot */
-                radial-gradient(calc(35.436% * 5.7) calc(12.445% * 5.7) at 42.5% 19%, transparent 43.6%, red 0 49%, transparent 0),
-                radial-gradient(440% 200% at 180% -17%, transparent 43.6%, red 0 53%, transparent 0),
-                radial-gradient(calc(17.636% * 9.5) calc(10.981% * 9.5) at 128% 51%, transparent 43.6%, red 0 50%, transparent 0),
-                radial-gradient(calc(35.436% * 5.7) calc(12.445% * 5.7) at 42.5% 19%, transparent 44%, red 0 49.4%, transparent 0),
-                radial-gradient(calc(17.636% * 17) calc(10.981% * 17) at -38% -29%, transparent 42.75%, red 0 51.5%, transparent 0),
-                
-                
-                
+                radial-gradient(calc(35.436% * 5.7) calc(12.445% * 5.7) at 42.5% 19%, transparent 43.6%, var(--black) 0 49%, transparent 0),
+                radial-gradient(440% 200% at 180% -17%, transparent 43.6%, var(--black) 0 53%, transparent 0),
+                radial-gradient(calc(17.636% * 9.5) calc(10.981% * 9.5) at 128% 51%, transparent 43.6%, var(--black) 0 50%, transparent 0),
+                radial-gradient(calc(35.436% * 5.7) calc(12.445% * 5.7) at 42.5% 19%, transparent 44%, var(--black) 0 49.4%, transparent 0),
+                radial-gradient(calc(17.636% * 17) calc(10.981% * 17) at -38% -29%, transparent 42.75%, var(--black) 0 51.5%, transparent 0),
                 
                 /* right foot */
-                radial-gradient(calc(35.436% * 5.7) calc(12.445% * 5.7) at 59% 19.25%, transparent 43.6%, red 0 49%, transparent 0),
-                radial-gradient(440% 200% at -80% -16.5%, transparent 43.6%, red 0 53.75%, transparent 0),
-                radial-gradient(calc(17.636% * 9.5) calc(10.981% * 9.5) at -29% 51%, transparent 43.6%, red 0 50%, transparent 0),
-                radial-gradient(calc(35.436% * 5.7) calc(12.445% * 5.7) at 59.5% 19%, transparent 44%, red 0 49.4%, transparent 0),
-                radial-gradient(calc(17.636% * 17) calc(10.981% * 17) at 135% -20%, transparent 42.75%, red 0 51.5%, transparent 0),
-
-
+                radial-gradient(calc(35.436% * 5.7) calc(12.445% * 5.7) at 59% 19.25%, transparent 43.6%, var(--black) 0 49%, transparent 0),
+                radial-gradient(440% 200% at -80% -16.5%, transparent 43.6%, var(--black) 0 53.75%, transparent 0),
+                radial-gradient(calc(17.636% * 9.5) calc(10.981% * 9.5) at -29% 51%, transparent 43.6%, var(--black) 0 50%, transparent 0),
+                radial-gradient(calc(35.436% * 5.7) calc(12.445% * 5.7) at 59.5% 19%, transparent 44%, var(--black) 0 49.4%, transparent 0),
+                radial-gradient(calc(17.636% * 17) calc(10.981% * 17) at 135% -20%, transparent 42.75%, var(--black) 0 51.5%, transparent 0),
 
 
                 /* bell */
-                radial-gradient(transparent 44%, red 0 49.5%, transparent 0),
+                radial-gradient(ellipse 100% 90% at 49.75% 112%, transparent 44%, var(--black) 0 50%, transparent 0),
+                radial-gradient(ellipse 100% 98% at 50.75% 7%, transparent 44%, var(--black) 0 49%, transparent 0),
+                radial-gradient(ellipse 200% 140% at 168% 55%, transparent 37%, var(--black) 0 48%, transparent 0),
+                radial-gradient(ellipse 220% 130% at -68% 59%, transparent 37%, var(--black) 0 48%, transparent 0),
+                
 
                 /* bell inner circle */
-                radial-gradient(red 0 49.5%, transparent 0),
+                radial-gradient(var(--black) 0 49.5%, transparent 0),
 
                 /* bell line */
-                linear-gradient(to right, red 18%, transparent 0),
+                linear-gradient(to right, var(--black) 18%, transparent 0),
 
                 /* bell top curve */
-                radial-gradient(ellipse 100% 82.17% at 50% 132.75%, transparent 40%, red 0 42.1%, transparent 0),
+                radial-gradient(ellipse 200% 100% at 51% 90%, transparent 37%, var(--black) 0 42.1%, transparent 0),
                 
                 /* bell bottom curve */
-                radial-gradient(ellipse 100% 82.17% at 50% 132.75%, transparent 40%, red 0 42.1%, transparent 0),
+                radial-gradient(ellipse 200% 100% at 51% 90%, transparent 37%, var(--black) 0 42.1%, transparent 0),
 
                 /* pocket bottom stroke */
-                radial-gradient(ellipse 100% 94.33% at 50% 0%, transparent 40%, red 0 42%, transparent 0),
+                radial-gradient(ellipse 100% 94.33% at 50% 0%, transparent 40%, var(--black) 0 42%, transparent 0),
 
                 /* pocket top stroke */
-                radial-gradient(ellipse 500% 100% at 50% 80%, transparent 40%, red 0 42%, transparent 0),
-
-                /* belly */
-                radial-gradient(ellipse 100% 93.5% at 50% 32%, transparent 40%, red 0 41.5%, transparent 0),
+                radial-gradient(ellipse 500% 100% at 50% 80%, transparent 40%, var(--black) 0 42%, transparent 0),
                 
                 /* groin */
-                radial-gradient(ellipse 200% 110% at 50% 70%, transparent 40%, red 0 53%, transparent 0),
+                radial-gradient(ellipse 200% 110% at 50% 70%, transparent 40%, var(--black) 0 53%, transparent 0),
 
                 /* thigh */
-                linear-gradient(to right, transparent 20%, red 0 27%, transparent 0)
+                linear-gradient(to right, transparent 20%, var(--black) 0 27%, transparent 0)
+
+
+                /*====================================*/
+                /* FILLS                              */
+                /*====================================*/
                 
             ;
             background-size:
+                /*====================================*/
+                /* STROKES                            */
+                /*====================================*/
                 /* head outer */
                 10% 10%,
                 10% 10%,
@@ -222,12 +240,21 @@
                 /* right arm strokes */
                 16.5% 16.5%,
                 3.5% 3.5%,
-
+                
+                /* belly */
+                40% 40%,
+                
                 /* left torso */
                 25% 25%,
                 6.5% 6.5%,
                 
+                25% 25%,
+                6.5% 6.5%,
+                
                 /* right torso */
+                25% 25%,
+                6.5% 6.5%,
+                
                 25% 25%,
                 6.5% 6.5%,
                 
@@ -236,10 +263,7 @@
                 3% 3%,
                 8.5% 8.5%,
                 14% 14%,
-                4% 4%,
-                
-                
-                
+                4% 4%, 
                 
                 /* right foot */
                 15% 15%,
@@ -248,11 +272,14 @@
                 14% 14%,
                 4% 4%,
 
-
-
-
                 /* bell */
-                15.5% 15.5%,
+                10.5% 10.5%,
+                11% 11%,
+                3% 3%,
+                3% 3%,
+
+
+
 
                 /* bell inner circle */
                 3.8% 3.8%,
@@ -261,10 +288,10 @@
                 3.8% 3.8%,
 
                 /* bell top curve */
-                36% 36%,
+                10.1% 10.1%,
                 
                 /* bell bottom curve */
-                36% 36%,
+                10.1% 10.1%,
 
                 /* pocket bottom stroke */
                 30.5% 30.5%,
@@ -272,17 +299,21 @@
                 /* pocket top stroke */
                 25.5% 25.5%,
                 
-                /* belly */
-                40% 40%,
-                
                 /* groin */
                 5% 5%,
 
                 /* thighs */
                 10% 10%,
+
+                /*====================================*/
+                /* FILLS                              */
+                /*====================================*/
                 100% 100%
             ;
             background-position:
+                /*====================================*/
+                /* STROKES                            */
+                /*====================================*/
                 /* head outer */
                 53% -0.75%,
                 42% -0.75%,
@@ -342,38 +373,45 @@
                 87.5% 61%,
                 76.25% 72.5%,
 
+                /* belly */
+                54.75% 94.75%,
+
                 /* left torso */
                 25% 80%,
-                33% 91%,
+                32.9% 90.9%,
+                
+                25.5% 80%,
+                32.9% 90.9%,
                 
                 /* right torso */
                 85% 80%,
-                73% 91%,
+                72.9% 90.9%,
+                
+                84.25% 80%,
+                72.4% 90.9%,
 
                 /* left foot */
                 44.25% 100%,
-                36% 93%,
+                36% 92.9%,
                 29.6% 99.5%,
                 41.3% 107.5%,
-                51.25% 100.5%,
-                
-                
-                
-                
+                51.25% 100.6%, 
                 
                 /* right foot */
                 62.4% 100%,
-                70.25% 93%,
+                70.1% 92.9%,
                 77% 99.5%,
-                65.6% 107.5%,
+                65.6% 107.4%,
                 54.75% 100%,
-                
-
-
-
 
                 /* bell */
-                53.5% 62.7%,
+                53.25% 54%,
+                53.25% 67.5%,
+                46.3% 60%,
+                59.5% 60%,
+
+
+
 
                 /* bell inner circle */
                 53.1% 62.5%,
@@ -382,10 +420,10 @@
                 54.6% 64.5%,
 
                 /* bell top curve */
-                54.5% 35.25%,
+                53.25% 59%,
                 
                 /* bell bottom curve */
-                54.5% 37.25%,
+                53.25% 60.5%,
 
                 /* pocket bottom stroke */
                 54.1% 100.75%,
@@ -393,167 +431,22 @@
                 /* pocket top stroke */
                 53.9%  80%,
 
-                /* belly */
-                54.75% 94.75%,
 
                 /* groin */
                 53.1% 90.75%,
 
                 /* thighs */
-                56% 96.75%,
+                56.1% 96.75%,
 
 
+
+                /*====================================*/
+                /* FILLS                              */
+                /*====================================*/
                 0% 0%,
                 0% 0%,
                 0% 0%
             ;
-        }
-
-        #homer {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80vmin;
-            height: 80vmin;
-            background-repeat: no-repeat;
-            background-image:
-                /* hair */
-                radial-gradient(ellipse 102% 95% at 58.75% 80%, transparent 45%, black 0 49.5%, transparent 0),
-                radial-gradient(ellipse 102% 95% at 66.75% 70%, transparent 45%, black 0 49.5%, transparent 0),
-                linear-gradient(82deg, transparent 40%, black 0 50%, transparent 0),
-                linear-gradient(42deg, transparent 30%, black 0 37%, transparent 0),
-                linear-gradient(90deg, transparent 40%, black 0 50%, transparent 0),
-                linear-gradient(52deg, transparent 62%, black 0 68%, transparent 0),
-                /* pupils */
-                radial-gradient(circle at 43.5% 45.5%, black 2%, transparent 0),
-                radial-gradient(circle at 64% 41.5%, black 1.75%, transparent 0),
-                /* eye 1 */
-                radial-gradient(ellipse 54% 51% at 44.5% 45%, white 17%, black 0 18.5%, transparent 0),
-                /* nose */
-                radial-gradient(ellipse 54% 51% at 0% 74.8%, white 51%, black 0 61%, transparent 0),
-                radial-gradient(circle at 150% 500%, white 88.75%, black 0 90.25%, transparent 0),
-                radial-gradient(circle at -85% -510%, #f000 89.88%, black 0 90.75%, transparent 0),
-                /* smile */
-                radial-gradient(circle at 110% 60%, transparent 50%, black 0 65%, transparent 0),
-                /* eye 2 */
-                radial-gradient(ellipse 50% 47% at 60.5% 42%, white 17%, black 0 18.5%, transparent 0),
-                /* neck */
-                radial-gradient(circle at -350% 120%, transparent 79.5%, #000 0 80.25%, transparent 0 92%, transparent 0),
-                radial-gradient(circle at 350% -90%, transparent 85%, #000 0 88%, transparent 0 92%, transparent 0),
-                /* mouth */
-                radial-gradient(circle at 40% -500%, transparent 90.5%, #000 0 92%, transparent 0 92%, transparent 0),
-                radial-gradient(circle at -30% 112%, transparent 59%, #000 0 62.5%, transparent 0),
-                radial-gradient(circle at -40% 20%, transparent 52%, #000 0 63%, transparent 0),
-                radial-gradient(circle at 0% 52%, white 35%, #000 0 45%, transparent 0),
-                /* chin */
-                linear-gradient(white, white),
-                radial-gradient(ellipse 62% 57% at 53% 71%, transparent 24%, black 0 25.5%, transparent 0),
-                /* ear */
-                radial-gradient(ellipse 50% 55% at 75% 50%, transparent 75%, black 0 90%, transparent 0),
-                radial-gradient(circle at 50% 110%, transparent 50%, black 0 65%, transparent 0),
-                radial-gradient(circle at 110% 40%, transparent 50%, black 0 65%, transparent 0),
-                /* eyebrow */
-                radial-gradient(circle at -20% 84%, transparent 55%, black 0 65%, transparent 0),
-                /* cheek */
-                radial-gradient(circle at -10% 50%, transparent 55%, black 0 65%, transparent 0);
-            background-size:
-                /* hair */
-                18% 23%,
-                17% 20%,
-                8% 8%,
-                8% 8%,
-                8% 9%,
-                8% 8%,
-                /* pupils */
-                100% 100%,
-                100% 100%,
-                /* eye 1 */
-                100% 100%,
-                /* nose */
-                15% 15%,
-                10% 10%,
-                14.5% 15%,
-                /* smile */
-                3.5% 3.5%,
-                /* eye 2 */
-                100% 100%,
-                /* neck */
-                25% 18%,
-                10% 10%,
-                /* mouth */
-                34% 10%,
-                15% 12.5%,
-                5% 5%,
-                5% 12%,
-                /* chin */
-                40% 23%,
-                100% 100%,
-                /* ear */
-                10% 10%,
-                3.5% 3.5%,
-                3.5% 2.5%,
-                /* eyebrow */
-                5.5% 7%,
-                /* cheek */
-                5.5% 7%;
-            background-position:
-                /* hair */
-                31% -1%,
-                23.5% 7%,
-                24% 56%,
-                26.9% 52.6%,
-                29.25% 52.25%,
-                30% 51.75%,
-                /* pupils */
-                0 0,
-                0 0,
-                /* eye 1 */
-                0 0,
-                /* nose */
-                72.75% 46%,
-                58% 47.25%,
-                58.88% 57%,
-                /* smile */
-                41.5% 72.5%,
-                /* eye 2 */
-                0 0,
-                /* neck */
-                43% 83%,
-                70% 89%,
-                /* mouth */
-                63% 73%,
-                76% 59%,
-                70% 75.5%,
-                78% 69%,
-                /* chin */
-                84% 69.5%,
-                0 0,
-                /* ear */
-                28% 65%,
-                31.5% 63.5%,
-                31.75% 64.5%,
-                /* eyebrow */
-                66% 30.75%,
-                /* cheek */
-                69.5% 51%;
-
-            &::before {
-                content: "";
-                box-sizing: border-box;
-                border: 0.8vmin solid;
-                position: absolute;
-                top: 12%;
-                left: 21%;
-                width: 43%;
-                height: 42%;
-                border-radius: 100% / 90% 85% 95% 0%;
-                transform: rotate(-25deg);
-                background: transparent;
-                clip-path: polygon(0% 0%, 100% 0%, 100% 63%, 0% 96%);
-                box-shadow: inset -2vmin 1vmin 0 -1vmin white;
-                box-shadow: inset -2vmin 1vmin 0 -1vmin white;
-            }
         }
 
     </style>
