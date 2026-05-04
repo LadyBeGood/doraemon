@@ -8,10 +8,11 @@
 </head>
 
 <body>
-    <img src="./reference.svg">
+    <!-- <img src="./reference.svg"> -->
     <div class="doraemon"></div>
 
     <style>
+        
         body {
             height: 100svh;
             margin: 0;
@@ -19,14 +20,10 @@
             place-items: center;
         }
 
-        img {
+        img,
+        .doraemon {
             width: min(500px, 100vw);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
-
 
         .doraemon {
             /*====================================*/
@@ -37,11 +34,14 @@
             --yellow: #fcd441;
             --white: #f6f7f1;
             --black: #090a05;
-            --black: red;
+            /* --black: red; */
 
-            width: min(500px, 100vw);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             aspect-ratio: 1/1;
-            opacity: 0.5;
+            /* opacity: 0.5; */
             background-repeat: no-repeat;
             background-image: 
                 /*====================================*/
@@ -53,6 +53,14 @@
                 radial-gradient(ellipse 465% 300% at -35% 150%, transparent 45.25%, var(--black) 0 47.25%, transparent 0),
                 radial-gradient(ellipse 2400% 1000% at -860% 300%, transparent 45.75%, var(--black) 0 46.5%, transparent 0),
                 radial-gradient(ellipse 250% 250% at -45% 50%, transparent 45.25%, var(--black) 0 46.3%, transparent 0),
+                radial-gradient(ellipse 610% 610% at -174% -110%, transparent 45.5%, var(--black) 0 46.4%, transparent 0),
+                
+                /* head left */
+                radial-gradient(ellipse 495% 495% at -140% 192%, transparent 45.5%, var(--black) 0 46.9%, transparent 0),
+                radial-gradient(ellipse 250% 250% at 145% 50%, transparent 45.25%, var(--black) 0 46.3%, transparent 0),
+                radial-gradient(ellipse 390% 390% at 175% 175.25%, transparent 45.25%, var(--black) 0 46.6%, transparent 0),
+                radial-gradient(ellipse 610% 610% at 279.25% -110%, transparent 45.5%, var(--black) 0 46.4%, transparent 0),
+
 
 
 
@@ -60,7 +68,7 @@
                 radial-gradient(ellipse 83% 100%, transparent 45%, var(--black) 0 49.5%, transparent 0),
                 
                 /* right eye ball */
-                radial-gradient(ellipse 83% 100%, transparent 45%, var(--black) 0 49.5%, transparent 0),
+                radial-gradient(ellipse 83% 100% at 51%, transparent 45%, var(--black) 0 49.5%, transparent 0),
 
                 /* left pupil */
                 radial-gradient(ellipse 65% 100%, transparent 18%, var(--black) 0 49.5%, transparent 0),
@@ -132,7 +140,7 @@
                 radial-gradient(calc(17.636% * 9.5) calc(10.981% * 9.5) at 128% 51%, transparent 43.6%, var(--black) 0 50%, transparent 0),
                 radial-gradient(calc(35.436% * 5.7) calc(12.445% * 5.7) at 42.5% 19%, transparent 44%, var(--black) 0 49.4%, transparent 0),
                 radial-gradient(calc(17.636% * 17) calc(10.981% * 17) at -38% -29%, transparent 42.75%, var(--black) 0 51.5%, transparent 0),
-
+                
                 /* right foot */
                 radial-gradient(calc(35.436% * 5.7) calc(12.445% * 5.7) at 59% 19.25%, transparent 43.6%, var(--black) 0 49%, transparent 0),
                 radial-gradient(440% 200% at -80% -16.5%, transparent 43.6%, var(--black) 0 53.75%, transparent 0),
@@ -192,6 +200,14 @@
                 10% 10%,
                 6% 6%,
                 25.5% 25.5%,
+                11.5% 11.5%,
+                
+                /* head left */
+                10% 10%,
+                25.5% 25.5%,
+                14% 14%,
+                11.5% 11.5%,
+
 
 
                 /* left eye ball */
@@ -326,11 +342,19 @@
                 /* STROKES                            */
                 /*====================================*/
                 /* head outer */
-                53% -1%,
-                42% -1%,
-                64% -0.9%,
+                53% -0.75%,
+                42% -0.75%,
+                64% -0.75%,
                 71.75% 3%,
                 88% 21.25%,
+                80% 46.5%,
+
+                /* head left */
+                81.6% 6.5%,
+                20% 21.25%,
+                27.75% 2.25%,
+                26% 46.5%,
+
 
                 /* left eye ball */
                 46% 2.8%,
