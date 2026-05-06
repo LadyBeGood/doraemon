@@ -87,6 +87,7 @@
 
 
                 /* nose */
+                radial-gradient(at 40% 40%, var(--white) 12%, transparent 0),
                 radial-gradient(var(--red) 42%, var(--black) 0 49.5%, transparent 0),
 
                 /* nose to mouth line */
@@ -141,22 +142,9 @@
                 radial-gradient(calc(35.436% * 5.7) calc(12.445% * 5.7) at 59.5% 19%, transparent 44%, var(--black) 0 49.4%, transparent 0),
                 radial-gradient(calc(17.636% * 17) calc(10.981% * 17) at 135% -20%, transparent 42.75%, var(--black) 0 51.5%, transparent 0),
                 
-                /* left torso */
-                radial-gradient(900% 900% at 418% 39%, transparent 40.25%, var(--black) 0 40.5%, transparent 0),
-                radial-gradient(500% 1200% at 251% -200%, transparent 43.5%, var(--black) 0 45.25%, transparent 0),
-                
-                radial-gradient(900% 900% at 418% 39%, transparent 38.75%, var(--blue) 0 40.5%, transparent 0),
-                radial-gradient(500% 1200% at 251% -200%, transparent 30%, var(--blue) 0 45.25%, transparent 0),
-                
-                /* right torso */
-                radial-gradient(900% 900% at -324% 39%, transparent 40.25%, var(--black) 0 40.5%, transparent 0),
-                radial-gradient(500% 1200% at -144% -200%, transparent 43.6%, var(--black) 0 45.25%, transparent 0),
-                
-                radial-gradient(900% 900% at -324% 39%, transparent 38.75%, var(--blue) 0 40.5%, transparent 0),
-                radial-gradient(500% 1200% at -144% -200%, transparent 30%, var(--blue) 0 45.25%, transparent 0),
                 
                 
-                /* bell */
+                /* also bell */
                 radial-gradient(ellipse 200% 140% at 168% 55%, transparent 37%, var(--black) 0 48%, transparent 0),
                 radial-gradient(ellipse 220% 130% at -68% 59%, transparent 37%, var(--black) 0 48%, transparent 0),
                 
@@ -177,6 +165,14 @@
                 radial-gradient(ellipse 290% 100% at 90% -12.7%, transparent 38%, var(--black) 0 41.5%, transparent 0),
                 radial-gradient(ellipse 310% 100% at 7% -12.5%, transparent 38%, var(--black) 0 41.5%, transparent 0),
                 
+                /* bell fill */
+                linear-gradient(var(--yellow) 15%, transparent 0),
+                linear-gradient(var(--yellow) 25%, transparent 0),
+                linear-gradient(var(--yellow) 25%, transparent 0),
+
+                /* bell */
+                radial-gradient(ellipse 100% 90% at 49.75% 112%, var(--yellow) 44%, var(--black) 0 50%, transparent 0),
+                radial-gradient(ellipse 100% 98% at 50.75% 7%, var(--yellow) 44%, var(--black) 0 49%, transparent 0),
                 
                 /* pocket bottom stroke */
                 radial-gradient(ellipse 100% 94.33% at 50% 0%, var(--white) 40%, var(--black) 0 42%, transparent 0),
@@ -184,27 +180,42 @@
                 /* pocket top stroke */
                 radial-gradient(ellipse 500% 100% at 50% 80%, transparent 40%, var(--black) 0 42%, transparent 0),
                 
+                /* belly */
+                radial-gradient(ellipse 100% 93.5% at 50% 32%, var(--white) 40%, var(--black) 0 41.5%, transparent 0),
+                
                 /* groin */
                 radial-gradient(ellipse 200% 110% at 50% 70%, transparent 40%, var(--black) 0 53%, transparent 0),
                 
                 /* thigh */
                 linear-gradient(to right, transparent 20%, var(--black) 0 27%, transparent 0),
                 
-                /* also bell */
-                radial-gradient(ellipse 100% 90% at 49.75% 112%, var(--yellow) 44%, var(--black) 0 50%, transparent 0),
-                radial-gradient(ellipse 100% 98% at 50.75% 7%, var(--yellow) 44%, var(--black) 0 49%, transparent 0),
+                /* left torso */
+                radial-gradient(900% 900% at 418% 39%, transparent 40.25%, var(--black) 0 40.5%, transparent 0),
+                radial-gradient(500% 1200% at 251% -200%, transparent 43.5%, var(--black) 0 45.25%, transparent 0),
+                
+                radial-gradient(900% 900% at 418% 39%, transparent 38.75%, var(--blue) 0 40.5%, transparent 0),
+                radial-gradient(500% 1200% at 251% -200%, transparent 30%, var(--blue) 0 45.25%, transparent 0),
+                
+                /* right torso */
+                radial-gradient(900% 900% at -324% 39%, transparent 40.25%, var(--black) 0 40.5%, transparent 0),
+                radial-gradient(500% 1200% at -144% -200%, transparent 43.6%, var(--black) 0 45.25%, transparent 0),
+                
+                radial-gradient(900% 900% at -324% 39%, transparent 38.75%, var(--blue) 0 40.5%, transparent 0),
+                radial-gradient(500% 1200% at -144% -200%, transparent 30%, var(--blue) 0 45.25%, transparent 0),
 
-                /* belly */
-                radial-gradient(ellipse 100% 93.5% at 50% 32%, var(--white) 40%, var(--black) 0 41.5%, transparent 0),
                 
                 
                 /*====================================*/
                 /* FILLS                              */
                 /*====================================*/
                 linear-gradient(var(--blue) 6%, transparent 0),
-                linear-gradient(var(--blue) 6%, transparent 0)
+                linear-gradient(var(--blue) 6%, transparent 0),
+                linear-gradient(var(--blue) 99%, transparent 0),
+                linear-gradient(var(--blue) 42%, transparent 0),
+                linear-gradient(var(--blue) 42%, transparent 0)
+
                 ;
-                background-size:
+            background-size:
                 /*====================================*/
                 /* STROKES                            */
                 /*====================================*/
@@ -245,6 +256,7 @@
 
 
                 /* nose */
+                12.25% 12.25%,
                 12.25% 12.25%,
                 
                 /* nose to mouth line */
@@ -300,21 +312,8 @@
                 14% 14%,
                 4% 4%,
 
-                /* left torso */
-                25% 25%,
-                6.5% 6.5%,
                 
-                25% 25%,
-                6.5% 6.5%,
-                
-                /* right torso */
-                25% 25%,
-                6.5% 6.5%,
-                
-                25% 25%,
-                6.5% 6.5%,
-                
-                
+                /* also bell */
                 3% 3%,
                 3% 3%,
                 
@@ -338,24 +337,44 @@
                 15.9% 15.9%,
                 15.9% 15.9%,
                 
+                /* bell fill */
+                8.25% 10%,
+                3% 5%,
+                3% 5%,
+
+                /* bell */
+                10.5% 10.5%,
+                11% 11%,
+
                 /* pocket bottom stroke */
                 30.5% 30.5%,
                 
                 /* pocket top stroke */
                 25.5% 25.5%,
                 
+                /* belly */
+                40% 40%,
+
                 /* groin */
                 5% 5%,
                 
                 /* thighs */
                 10% 10%,
                 
-                /* bell */
-                10.5% 10.5%,
-                11% 11%,
+                /* left torso */
+                25% 25%,
+                6.5% 6.5%,
+                
+                25% 25%,
+                6.5% 6.5%,
+                
+                /* right torso */
+                25% 25%,
+                6.5% 6.5%,
+                
+                25% 25%,
+                6.5% 6.5%,
 
-                /* belly */
-                40% 40%,
                 
 
                 /*====================================*/
@@ -363,6 +382,9 @@
                 /*====================================*/
                 15% 15%,
                 15% 15%,
+                35% 35%,
+                13% 13%,
+                13% 13%,
                 100% 100%,
                 100% 100%,
                 100% 100%,
@@ -415,6 +437,7 @@
 
 
                 /* nose */
+                53.25% 15.34%,
                 53.25% 15.34%,
 
                 /* nose to mouth line */
@@ -471,21 +494,8 @@
                 54.75% 100%,
 
                 
-                /* left torso */
-                25% 80%,
-                32.9% 90.9%,
                 
-                25.5% 80%,
-                32.9% 90.9%,
-                
-                /* right torso */
-                85% 80%,
-                72.9% 90.9%,
-                
-                84.25% 80%,
-                72.4% 90.9%,
-                
-                
+                /* also bell */
                 46.3% 60%,
                 59.5% 60%,
                 
@@ -509,12 +519,23 @@
                 39.4% 63%,
                 67.75% 63%,
                 
+                /* bell fill */
+                53.25% 65%, 
+                49% 62%, 
+                57% 62%, 
+
+                /* bell */
+                53.25% 54%,
+                53.25% 67.5%,
+
                 /* pocket bottom stroke */
                 54.1% 100.75%,
                 
                 /* pocket top stroke */
                 53.9%  80%,
                 
+                /* belly */
+                54.75% 94.9%,
                 
                 /* groin */
                 53.1% 90.75%,
@@ -522,12 +543,20 @@
                 /* thighs */
                 56.1% 96.75%,
                 
-                /* bell */
-                53.25% 54%,
-                53.25% 67.5%,
+                /* left torso */
+                25% 80%,
+                32.9% 90.9%,
+                
+                25.5% 80%,
+                32.9% 90.9%,
+                
+                /* right torso */
+                85% 80%,
+                72.9% 90.9%,
+                
+                84.25% 80%,
+                72.4% 90.9%,
 
-                /* belly */
-                54.75% 94.9%,
                 
                 
                 /*====================================*/
@@ -535,7 +564,10 @@
                 /*====================================*/
                 39.5% 99.5%,
                 67.25% 99.5%,
-                0% 0%,
+                53.5% 88%,
+
+                43% 100%,
+                64% 100%,
                 0% 0%,
                 0% 0%,
                 0% 0%,
