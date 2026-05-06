@@ -34,6 +34,7 @@
             --yellow: #fcd441;
             --white: #f6f7f1;
             --black: #090a05;
+            --brown: #625542;
             /* --black: red; */
 
             position: absolute;
@@ -55,26 +56,35 @@
                 radial-gradient(ellipse 250% 250% at -45% 50%, transparent 45.25%, var(--black) 0 46.3%, transparent 0),
                 radial-gradient(ellipse 610% 610% at -174% -110%, transparent 45.5%, var(--black) 0 46.4%, transparent 0),
                 
+                
                 /* head left */
                 radial-gradient(ellipse 495% 495% at -140% 192%, transparent 45.5%, var(--black) 0 46.9%, transparent 0),
                 radial-gradient(ellipse 250% 250% at 145% 50%, transparent 45.25%, var(--black) 0 46.3%, transparent 0),
                 radial-gradient(ellipse 390% 390% at 175% 175.25%, transparent 45.25%, var(--black) 0 46.6%, transparent 0),
                 radial-gradient(ellipse 610% 610% at 279.25% -110%, transparent 45.5%, var(--black) 0 46.4%, transparent 0),
-
-
-
-
-                /* left eye ball */
-                radial-gradient(ellipse 83% 100%, transparent 45%, var(--black) 0 49.5%, transparent 0),
                 
-                /* right eye ball */
-                radial-gradient(ellipse 83% 100% at 51%, transparent 45%, var(--black) 0 49.5%, transparent 0),
+                /* head inner left */
+                radial-gradient(ellipse 280% 280% at 126.5% 135.5%, transparent 45.1%, var(--black) 0 46.6%, transparent 0),
+                radial-gradient(ellipse 370% 370% at 198.5% 44%, transparent 45.1%, var(--black) 0 46.1%, transparent 0),
+                radial-gradient(ellipse 500% 500% at 300% -35%, green 45.1%, var(--black) 0 46.1%, blue 0),
+                
+                /* head inner right */
+                radial-gradient(ellipse 280% 280% at -25.75% 135.5%, transparent 45.1%, var(--black) 0 46.6%, transparent 0),
+                radial-gradient(ellipse 370% 370% at -116.6% 44%, transparent 45.1%, var(--black) 0 46.1%, transparent 0),
+
 
                 /* left pupil */
                 radial-gradient(ellipse 65% 100%, transparent 18%, var(--black) 0 49.5%, transparent 0),
 
                 /* right pupil */
+                
                 radial-gradient(ellipse 65% 100%, transparent 18%, var(--black) 0 49.5%, transparent 0),
+                /* left eye ball */
+                radial-gradient(ellipse 83% 100%, var(--white) 45%, var(--black) 0 49.5%, transparent 0),
+                
+                /* right eye ball */
+                radial-gradient(ellipse 83% 100% at 51%, var(--white) 45%, var(--black) 0 49.5%, transparent 0),
+
 
                 /* nose */
                 radial-gradient(var(--red) 42%, var(--black) 0 49.5%, transparent 0),
@@ -117,23 +127,6 @@
                 radial-gradient(400% 400% at -100% 170%, transparent 43.25%, var(--black) 0 44%, transparent 0),
                 radial-gradient(600% 600% at 180% -190%, transparent 43.25%, var(--black) 0 46%, transparent 0),
                 
-                /* belly */
-                radial-gradient(ellipse 100% 93.5% at 50% 32%, transparent 40%, var(--black) 0 41.5%, transparent 0),
-                
-                /* left torso */
-                radial-gradient(900% 900% at 418% 39%, transparent 40.25%, var(--black) 0 40.5%, transparent 0),
-                radial-gradient(500% 1200% at 251% -200%, transparent 43.5%, var(--black) 0 45.25%, transparent 0),
-                
-                radial-gradient(900% 900% at 418% 39%, transparent 38.75%, var(--blue) 0 40.5%, transparent 0),
-                radial-gradient(500% 1200% at 251% -200%, transparent 30%, var(--blue) 0 45.25%, transparent 0),
-
-                /* right torso */
-                radial-gradient(900% 900% at -324% 39%, transparent 40.25%, var(--black) 0 40.5%, transparent 0),
-                radial-gradient(500% 1200% at -144% -200%, transparent 43.6%, var(--black) 0 45.25%, transparent 0),
-                
-                radial-gradient(900% 900% at -324% 39%, transparent 38.75%, var(--blue) 0 40.5%, transparent 0),
-                radial-gradient(500% 1200% at -144% -200%, transparent 30%, var(--blue) 0 45.25%, transparent 0),
-                
                 /* left foot */
                 radial-gradient(calc(35.436% * 5.7) calc(12.445% * 5.7) at 42.5% 19%, transparent 43.6%, var(--black) 0 49%, transparent 0),
                 radial-gradient(440% 200% at 180% -17%, transparent 43.6%, var(--black) 0 53%, transparent 0),
@@ -147,19 +140,32 @@
                 radial-gradient(calc(17.636% * 9.5) calc(10.981% * 9.5) at -29% 51%, transparent 43.6%, var(--black) 0 50%, transparent 0),
                 radial-gradient(calc(35.436% * 5.7) calc(12.445% * 5.7) at 59.5% 19%, transparent 44%, var(--black) 0 49.4%, transparent 0),
                 radial-gradient(calc(17.636% * 17) calc(10.981% * 17) at 135% -20%, transparent 42.75%, var(--black) 0 51.5%, transparent 0),
-
+                
+                /* left torso */
+                radial-gradient(900% 900% at 418% 39%, transparent 40.25%, var(--black) 0 40.5%, transparent 0),
+                radial-gradient(500% 1200% at 251% -200%, transparent 43.5%, var(--black) 0 45.25%, transparent 0),
+                
+                radial-gradient(900% 900% at 418% 39%, transparent 38.75%, var(--blue) 0 40.5%, transparent 0),
+                radial-gradient(500% 1200% at 251% -200%, transparent 30%, var(--blue) 0 45.25%, transparent 0),
+                
+                /* right torso */
+                radial-gradient(900% 900% at -324% 39%, transparent 40.25%, var(--black) 0 40.5%, transparent 0),
+                radial-gradient(500% 1200% at -144% -200%, transparent 43.6%, var(--black) 0 45.25%, transparent 0),
+                
+                radial-gradient(900% 900% at -324% 39%, transparent 38.75%, var(--blue) 0 40.5%, transparent 0),
+                radial-gradient(500% 1200% at -144% -200%, transparent 30%, var(--blue) 0 45.25%, transparent 0),
+                
+                
                 /* bell */
-                radial-gradient(ellipse 100% 90% at 49.75% 112%, transparent 44%, var(--black) 0 50%, transparent 0),
-                radial-gradient(ellipse 100% 98% at 50.75% 7%, transparent 44%, var(--black) 0 49%, transparent 0),
                 radial-gradient(ellipse 200% 140% at 168% 55%, transparent 37%, var(--black) 0 48%, transparent 0),
                 radial-gradient(ellipse 220% 130% at -68% 59%, transparent 37%, var(--black) 0 48%, transparent 0),
                 
                 /* bell inner circle */
-                radial-gradient(100% 90%, var(--black) 0 38.5%, transparent 0),
-
+                radial-gradient(100% 90%, var(--brown) 20%, var(--black) 0 38.5%, transparent 0),
+                
                 /* bell line */
                 linear-gradient(to right, var(--black) 16.75%, transparent 0),
-
+                
                 /* bell top curve */
                 radial-gradient(ellipse 200% 100% at 51% 90%, transparent 37%, var(--black) 0 42.1%, transparent 0),
                 
@@ -170,27 +176,35 @@
                 radial-gradient(ellipse 280% 100% at 51% 22%, transparent 38%, var(--black) 0 39.5%, transparent 0),
                 radial-gradient(ellipse 290% 100% at 90% -12.7%, transparent 38%, var(--black) 0 41.5%, transparent 0),
                 radial-gradient(ellipse 310% 100% at 7% -12.5%, transparent 38%, var(--black) 0 41.5%, transparent 0),
-
-
+                
+                
                 /* pocket bottom stroke */
-                radial-gradient(ellipse 100% 94.33% at 50% 0%, transparent 40%, var(--black) 0 42%, transparent 0),
-
+                radial-gradient(ellipse 100% 94.33% at 50% 0%, var(--white) 40%, var(--black) 0 42%, transparent 0),
+                
                 /* pocket top stroke */
                 radial-gradient(ellipse 500% 100% at 50% 80%, transparent 40%, var(--black) 0 42%, transparent 0),
                 
                 /* groin */
                 radial-gradient(ellipse 200% 110% at 50% 70%, transparent 40%, var(--black) 0 53%, transparent 0),
-
+                
                 /* thigh */
-                linear-gradient(to right, transparent 20%, var(--black) 0 27%, transparent 0)
+                linear-gradient(to right, transparent 20%, var(--black) 0 27%, transparent 0),
+                
+                /* also bell */
+                radial-gradient(ellipse 100% 90% at 49.75% 112%, var(--yellow) 44%, var(--black) 0 50%, transparent 0),
+                radial-gradient(ellipse 100% 98% at 50.75% 7%, var(--yellow) 44%, var(--black) 0 49%, transparent 0),
 
-
+                /* belly */
+                radial-gradient(ellipse 100% 93.5% at 50% 32%, var(--white) 40%, var(--black) 0 41.5%, transparent 0),
+                
+                
                 /*====================================*/
                 /* FILLS                              */
                 /*====================================*/
-                
-            ;
-            background-size:
+                linear-gradient(var(--blue) 6%, transparent 0),
+                linear-gradient(var(--blue) 6%, transparent 0)
+                ;
+                background-size:
                 /*====================================*/
                 /* STROKES                            */
                 /*====================================*/
@@ -207,8 +221,21 @@
                 25.5% 25.5%,
                 14% 14%,
                 11.5% 11.5%,
+                
+                /* head inner left */
+                14.25% 14.25%,
+                14.25% 14.25%,
+                14.25% 14.25%,
+                
+                /* head inner right */
+                14.25% 14.25%,
+                14.25% 14.25%,
 
+                /* left pupil */
+                5.25% 5.25%,
 
+                /* right pupil */
+                5.25% 5.25%,
 
                 /* left eye ball */
                 16% 16%,
@@ -216,11 +243,6 @@
                 /* right eye ball */
                 16% 16%,
 
-                /* left pupil */
-                5.25% 5.25%,
-
-                /* right pupil */
-                5.25% 5.25%,
 
                 /* nose */
                 12.25% 12.25%,
@@ -263,22 +285,6 @@
                 16.5% 16.5%,
                 3.5% 3.5%,
                 
-                /* belly */
-                40% 40%,
-                
-                /* left torso */
-                25% 25%,
-                6.5% 6.5%,
-                
-                25% 25%,
-                6.5% 6.5%,
-                
-                /* right torso */
-                25% 25%,
-                6.5% 6.5%,
-                
-                25% 25%,
-                6.5% 6.5%,
                 
                 /* left foot */
                 15% 15%,
@@ -294,21 +300,33 @@
                 14% 14%,
                 4% 4%,
 
-                /* bell */
-                10.5% 10.5%,
-                11% 11%,
+                /* left torso */
+                25% 25%,
+                6.5% 6.5%,
+                
+                25% 25%,
+                6.5% 6.5%,
+                
+                /* right torso */
+                25% 25%,
+                6.5% 6.5%,
+                
+                25% 25%,
+                6.5% 6.5%,
+                
+                
                 3% 3%,
                 3% 3%,
-
-
-
-
+                
+                
+                
+                
                 /* bell inner circle */
                 3.5% 3.5%,
                 
                 /* bell inner line */
                 3.8% 3.8%,
-
+                
                 /* bell top curve */
                 10.1% 10.1%,
                 
@@ -319,27 +337,46 @@
                 39.5% 39.5%,
                 15.9% 15.9%,
                 15.9% 15.9%,
-
+                
                 /* pocket bottom stroke */
                 30.5% 30.5%,
-
+                
                 /* pocket top stroke */
                 25.5% 25.5%,
                 
                 /* groin */
                 5% 5%,
-
+                
                 /* thighs */
                 10% 10%,
+                
+                /* bell */
+                10.5% 10.5%,
+                11% 11%,
+
+                /* belly */
+                40% 40%,
+                
 
                 /*====================================*/
                 /* FILLS                              */
                 /*====================================*/
+                15% 15%,
+                15% 15%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
                 100% 100%
-            ;
+                ;
             background-position:
-                /*====================================*/
-                /* STROKES                            */
+            /*====================================*/
+            /* STROKES                            */
                 /*====================================*/
                 /* head outer */
                 53% -0.75%,
@@ -354,7 +391,21 @@
                 20% 21.25%,
                 27.75% 2.25%,
                 26% 46.5%,
+                
+                /* head inner left */
+                30.4% 12.25%,
+                25% 29%,
+                29% 45.25%,
+                
+                /* head inner right */
+                76.5% 12.25%,
+                85% 29%,
 
+                /* left pupil */
+                49.3% 9.25%,
+
+                /* right pupil */
+                56.9% 9.14%,
 
                 /* left eye ball */
                 46% 2.8%,
@@ -362,11 +413,6 @@
                 /* right eye ball */
                 61% 2.8%,
 
-                /* left pupil */
-                49.3% 9.25%,
-
-                /* right pupil */
-                56.9% 9.14%,
 
                 /* nose */
                 53.25% 15.34%,
@@ -409,23 +455,7 @@
                 87.5% 61%,
                 76.25% 72.5%,
 
-                /* belly */
-                54.75% 94.9%,
-
-                /* left torso */
-                25% 80%,
-                32.9% 90.9%,
                 
-                25.5% 80%,
-                32.9% 90.9%,
-                
-                /* right torso */
-                85% 80%,
-                72.9% 90.9%,
-                
-                84.25% 80%,
-                72.4% 90.9%,
-
                 /* left foot */
                 44.25% 100%,
                 36% 92.9%,
@@ -440,21 +470,34 @@
                 65.6% 107.4%,
                 54.75% 100%,
 
-                /* bell */
-                53.25% 54%,
-                53.25% 67.5%,
+                
+                /* left torso */
+                25% 80%,
+                32.9% 90.9%,
+                
+                25.5% 80%,
+                32.9% 90.9%,
+                
+                /* right torso */
+                85% 80%,
+                72.9% 90.9%,
+                
+                84.25% 80%,
+                72.4% 90.9%,
+                
+                
                 46.3% 60%,
                 59.5% 60%,
-
-
-
-
+                
+                
+                
+                
                 /* bell inner circle */
                 53.1% 62.5%,
-
+                
                 /* bell inner line */
                 54.75% 64.5%,
-
+                
                 /* bell top curve */
                 53.25% 59%,
                 
@@ -465,25 +508,44 @@
                 54.9% 50%,
                 39.4% 63%,
                 67.75% 63%,
-
+                
                 /* pocket bottom stroke */
                 54.1% 100.75%,
-
+                
                 /* pocket top stroke */
                 53.9%  80%,
-
-
+                
+                
                 /* groin */
                 53.1% 90.75%,
-
+                
                 /* thighs */
                 56.1% 96.75%,
+                
+                /* bell */
+                53.25% 54%,
+                53.25% 67.5%,
 
-
-
+                /* belly */
+                54.75% 94.9%,
+                
+                
                 /*====================================*/
                 /* FILLS                              */
                 /*====================================*/
+                39.5% 99.5%,
+                67.25% 99.5%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
                 0% 0%,
                 0% 0%,
                 0% 0%
