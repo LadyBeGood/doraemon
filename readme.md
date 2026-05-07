@@ -11,7 +11,9 @@
 
 </div>
 
-
+> [!IMPORTANT]
+> Looks best in Chrome.
+> Firefox handles sub-pixel rounding and gradient anti-aliasing differently than Chromium. This results in small/duplicating artifacts and misaligned edges that are not present in Chromium based browsers.
 
 ## License
 The code in this repository is licensed under MIT-0. See [license.md](./license.md).
