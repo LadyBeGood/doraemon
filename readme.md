@@ -3,7 +3,7 @@
 
 # Doraemon
 
-<img src="./preview.png" style="width: min(300px, 100%);" alt="Doraemon">
+<img src="./preview.png" alt="Doraemon">
 
 *Doraemon, built with pure HTML and CSS.*
 
@@ -14,6 +14,14 @@
 > [!IMPORTANT]
 > Looks best in Chrome.
 > Firefox handles sub-pixel rounding and gradient anti-aliasing differently than Chromium. This results in small/duplicating artifacts and misaligned edges that are not present in Chromium based browsers.
+
+## Design
+The line art and thcoloring are rendered entirely through exploiting CSS gradients (94 in total) on a single div. No SVGs, pseudo-elements, or external assets are used.
+
+To demonstrate the scale of the layering, the image below shows the result of replacing every colour (except transparent) with a unique random hex code:
+
+<img src="./layer.png" alt="Doraemon image with each gradient having a different colour" />
+
 
 ## License
 The code in this repository is licensed under MIT-0. See [license.md](./license.md).
