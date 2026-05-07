@@ -16,11 +16,11 @@
 > Firefox handles sub-pixel rounding and gradient anti-aliasing differently than Chromium. This results in small/duplicating artifacts and misaligned edges that are not present in Chromium based browsers.
 
 ## Design
-The line art and thcoloring are rendered entirely through exploiting CSS gradients (94 in total) on a single div. No SVGs, pseudo-elements, or external assets are used.
+The line art and the colouring are rendered entirely through exploiting CSS gradients (**94 in total**) on a single div. No SVGs, pseudo-elements, or external assets are used.
 
 To demonstrate the scale of the layering, the image below shows the result of replacing every colour (except transparent) with a unique random hex code:
 
-<img src="./layer.png" alt="Doraemon image with each gradient having a different colour" />
+<img src="./layers.png" alt="Doraemon image with each gradient having a different colour" />
 
 
 ## License
