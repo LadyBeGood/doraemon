@@ -12,8 +12,9 @@
 </div>
 
 > [!IMPORTANT]
-> Looks best in Chrome.
-> Firefox handles sub-pixel rounding and gradient anti-aliasing differently than Chromium. This results in small/duplicating artifacts and misaligned edges that are not present in Chromium based browsers.
+> You will probably run into some sub-pixel rendering issues. Don't worry, it's a common quirk of this art style.
+> 
+> In Firefox, you may see duplicate artifacts at lower (\<500px) resolutions, this is a Firefox specific bug as far as I know.
 
 ## Design
 The line art and the colouring are rendered entirely through exploiting CSS gradients (**94 in total**) on a single div. No SVGs, pseudo-elements, or external assets are used.
