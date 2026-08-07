@@ -13,8 +13,13 @@
 
 > [!IMPORTANT]
 > You will probably run into some sub-pixel rendering issues. Don't worry, it's a common quirk of this art style.
-> 
-> In Firefox, you may see duplicate artifacts at lower (\<500px) resolutions, this is a Firefox specific bug as far as I know.
+
+
+> [!IMPORTANT]
+> Firefox users may see duplicate gradient artifacts at viewport widths below 500px due to a Firefox rendering bug.
+>
+> I reported this issue to Mozilla in [Bug 2057205](https://bugzilla.mozilla.org/show_bug.cgi?id=2057205), and it has since been fixed. The fix is available in Firefox Nightly.
+
 
 ## Design
 The line art and the colouring are rendered entirely through exploiting CSS gradients (**94 in total**) on a single div. No SVGs, pseudo-elements, or external assets are used.
