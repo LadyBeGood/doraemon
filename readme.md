@@ -28,6 +28,9 @@ To demonstrate the scale of the layering, the image below shows the result of re
 
 <img src="./layers.png" alt="Doraemon image with each gradient having a different colour" />
 
+## Inspirations
+- **Senjougahara Hitagi** by Gagah Pangeran Rosfatiputra: <https://github.com/gagahpangeran/hitagi-css>
+- **Homer Simpson** by Alvaro Montoro: <https://dev.to/alvaromontoro/homer-simpson-in-css-with-a-single-html-element-4ood>
 
 ## License
 The code in this repository is licensed under MIT-0. See [license.txt](./license.txt).
