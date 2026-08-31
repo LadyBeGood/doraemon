@@ -18,7 +18,7 @@
 > [!IMPORTANT]
 > Firefox users may see duplicate gradient artifacts at viewport widths below 500px due to a Firefox rendering bug.
 >
-> I reported this issue to Mozilla in [Bug 2057205](https://bugzilla.mozilla.org/show_bug.cgi?id=2057205), and it has since been fixed. The fix is available in Firefox Nightly.
+> I reported this issue to Mozilla in [Bug 2057205](https://bugzilla.mozilla.org/show_bug.cgi?id=2057205), and it has since been fixed. The fix is available in the lastest Firefox versions.
 
 
 ## Design
